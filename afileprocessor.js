@@ -47,7 +47,7 @@ process.stdin.on('data', function(data){
         console.log(`\nTrying to open ${choice}`);
         try {
           theFile = fs.readFileSync(choice, `utf8`);
-          console.log(`Openned ${choice}\n\n`);
+          console.log(`Opened ${choice}\n\n`);
 
           answers.push(choice);
           currentQuestion++;
@@ -64,7 +64,7 @@ process.stdin.on('data', function(data){
 
       if(!isNaN(choice)){
         if(choice === 1){
-          console.log(`Ok, it's a cvs file\n`);
+          console.log(`Ok, it's a csv file\n`);
           answers.push(data);
         } else if(choice === 2){
           console.log(`Oh Boy, Tab separated file!\n`);
